@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Background</title>
+
+        <script>
+             document.addEventListener('DOMContentLoaded', function() {
+                let correct = document.querySelector('.correct');
+                correct.addEventListener('click', function(){
+                    correct.style.backgroundColor = 'green';
+                    document.querySelector("#response").innerHTML = "Correct!";
+                    document.querySelector("#description").innerHTML =
+                    "My parents were born in Southeast Nigeria and immigrated to the United States during their twenties. As a Nigerian-American, I am very closely connected to my heritage. I've been back to Nigeria four times and love seeing all of the family still there. In America, my family is a part of the Mbaise community that regularly hosts cultural events and gatherings (pre-COVID times).";
+                });
+                let incorrects = document.querySelectorAll('.incorrect');
+                for (let incorrect of incorrects)
+                {
+                    incorrect.addEventListener('click', function(){
+                        incorrect.style.backgroundColor = 'red';
+                        document.querySelector('#response').innerHTML = "Incorrect!";
+                    });
+                }
+            });
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron" style= "background-color: #1dc429;">
+
+            <h1>My Background</h1>
+            <h4 class= "serif">Some quick information about where my family's from and who I am!</h4>
+            <hr class="divider">
+
+        </div>
+
+        <div class= "sansserif">
+
+            <h1 class= "headers">Family Roots</h1>
+            <h3 class= "text"> <i>Can you guess where this is?</i> </h3>
+
+        </div>
+
+        <img alt = "Picture of Nigeria" src = "images/Picture of Nigeria.jpg" class= "image">
+
+        <br>
+
+        <div class = "section">
+
+            <button class = "incorrect"> Ghana </button>
+            <button class= "incorrect"> Kenya </button>
+            <button class = "correct"> Nigeria </button>
+            <button class= "incorrect"> Cameroon </button>
+            <button class= "incorrect"> Haiti </button>
+            <p id="response"></p>
+
+        </div>
+
+        <div class= "text">
+
+            <p id= "description"></p>
+            <p class= "links">Visit Other Pages:</p>
+
+            <nav>
+                <a href= "index.html"> Index </a> <a href= "hobbies.html"> Hobbies </a> <a href= "goals.html"> Goals </a>
+            </nav>
+
+            <hr>
+
+        </div>
+
+        <footer>Nana's Background</footer>
+
+    </body>
+
+</html>

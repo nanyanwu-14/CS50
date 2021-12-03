@@ -1,0 +1,85 @@
+.text {
+    background-color: #fff;
+    color: #212529;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    text-align: center;
+}
+
+.headers {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    text-decoration: underline;
+    color: #e8c810;
+}
+
+.jumbotron {
+    color: #fff;
+    margin-bottom: 1rem;
+    padding: 1rem .5rem;
+    text-align: center;
+    border-style: solid;
+    border-color: white;
+    border-width: .4rem;
+}
+
+.divider{
+    color: #F8D605;
+    border-top: 1px solid;
+    border-width: 2px;
+    width: 50%;
+}
+
+footer{
+    position: fixed;
+    bottom: 5px;
+    margin-left: 5px;
+}
+
+.links{
+    color: #e8c810;
+    font-weight: bold;
+}
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* Button Configurations From CS50 Lab*/
+.section{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+button {
+    background-color: #8cf58c;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    padding: 0.375rem 0.75rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Reference: https://www.w3schools.com/css/css_font.asp*/
+.serif {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.sansserif {
+    font-family: Arial, "Helvetica", sans-serif;
+}
